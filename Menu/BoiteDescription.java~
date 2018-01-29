@@ -1,0 +1,52 @@
+import java.awt.Font;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import MG2D.geometrie.Couleur;
+import MG2D.geometrie.Point;
+import MG2D.geometrie.Rectangle;
+import MG2D.geometrie.Texte;
+
+public class BoiteDescription extends Boite{
+
+	private Texte message;
+	
+	BoiteDescription(Rectangle rectangle) {
+		super(rectangle);
+	}
+	
+	public void lireFichier(String path){
+		System.out.println(path);
+		String chaine="";
+		String fichier =path+"/description.txt";
+		
+		//lecture du fichier texte	
+		try{
+			InputStream ips=new FileInputStream(fichier); 
+			InputStreamReader ipsr=new InputStreamReader(ips);
+			BufferedReader br=new BufferedReader(ipsr);
+			String ligne;
+			while ((ligne=br.readLine())!=null){
+				System.out.println(ligne);
+				chaine+=ligne+"\n";
+			}
+			//message = new Texte(Couleur .NOIR, chaine, new Font("Calibri", Font.TYPE1_FONT, 30), new Point(900, 200));
+			setMessage(chaine);
+			br.close(); 
+		}		
+		catch (Exception e){
+			System.out.println(e.toString());
+		}
+	}
+	
+	public Texte getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message.setTexte(message);	
+	}
+
+}

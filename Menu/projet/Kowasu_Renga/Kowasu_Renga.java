@@ -1,0 +1,262 @@
+import MG2D.Fenetre;
+import MG2D.Clavier;
+
+import MG2D.geometrie.Cercle;
+import MG2D.geometrie.Point;
+import MG2D.geometrie.Rectangle;
+import MG2D.geometrie.Texture;
+import MG2D.geometrie.Couleur;
+
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+
+public class Kowasu_Renga {
+
+    // Attributs //
+	
+
+	static GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[0];
+	
+	final static int largeur = 1280;
+    final static int hauteur = 1024;
+	
+    static Fenetre f = new Fenetre ("Kowasu Renga");
+    
+
+    private static Point a = new Point ( ( largeur / 2 ) - 40, 50);
+    private static Point b = new Point ( ( largeur / 2 ) + 40, 60);
+	
+    private static int cx = 2;
+    private static int cy = 2;
+
+    private static int dx = 0;
+    private static int dy = 0;
+	
+    private static Clavier clavier = f.getClavier();
+	
+    // Géometrie //
+	
+    private static Texture background = new Texture ( "img/background.jpg", new Point ( 0, 0 ), largeur, hauteur);
+	
+    private static Rectangle joueur = new Rectangle ( Couleur.BLANC, a, b, true );
+	
+    private static Point centre = new Point ( f.getMilieu().getX(), 80 );	
+    private static Cercle balle = new Cercle ( Couleur.BLANC, centre, 8, true );
+	
+    // Main //	
+	
+    public static void main ( String [] args ) {
+	
+	device.setFullScreenWindow(f);
+	f.setVisible(true);
+	
+	
+	f.ajouter ( background );
+	f.ajouter ( joueur );		
+	f.ajouter ( balle );
+		
+	int c = 0;	// Pour varier les couleurs //
+	int z = 0;	// Incrémente le tableau de rectangle //
+	int nb = 5;	// Nombre de coup nécessaire pour casser un bloc //
+		
+	Couleur [] couleur = {
+		
+	    new Couleur ( 103, 11, 122 ),		// Violet //
+	    new Couleur ( 12, 73, 156 ),		// Bleu foncé //
+	    new Couleur ( 106, 204, 229 ),	// Bleu clair //
+	    new Couleur ( 121, 160, 5 ),		// Vert //
+	    new Couleur ( 250, 241, 24 )		// Jaune //
+	};
+		
+	Rectangle [] bloc = new Rectangle[75];
+	int [][] info_bloc = new int [75][3];	// Information sur les blocs : l'état du bloc, le nombre de coups pour le détruire et l'indice de la couleur utilisée //
+		
+	for ( int i = 200; i < 450/*450*/; i += 50 ) {
+			
+	    for ( int j = 40; j < 1180/*830*/; j += 80 ) {
+				
+		bloc [z] = new Rectangle ( couleur [c], new Point ( j, hauteur-i-38 ), 68, 38, true );
+				
+		info_bloc [z][0] = 1;
+		info_bloc [z][1] = nb;
+		info_bloc [z][2] = c;
+				
+		f.ajouter ( bloc [z] );
+				
+		z++;
+	    }
+			
+	    c++;
+	    nb--;
+	}
+		
+	Texture [] score_nb = {
+			
+	    new Texture ( "img/0.png", new Point ( largeur - 32, hauteur - 40 ) ),
+	    new Texture ( "img/0.png", new Point ( largeur - 64, hauteur - 40 ) ),
+	    new Texture ( "img/0.png", new Point ( largeur - 96, hauteur - 40 ) ),
+	    new Texture ( "img/0.png", new Point ( largeur - 128, hauteur - 40 ) ),
+	    new Texture ( "img/0.png", new Point ( largeur - 160, hauteur - 40 ) )
+	};
+		
+	f.ajouter ( score_nb[0] );
+	f.ajouter ( score_nb[1] );
+	f.ajouter ( score_nb[2] );
+	f.ajouter ( score_nb[3] );
+	f.ajouter ( score_nb[4] );
+		
+	int vitesse = 1;	// Permet de faire varier la vitesse du jeu //
+	int score = 0;		// Représente le score du joueur //
+
+	nb = 0;				// Correspond au nombre de fois que l'on touche un bloc, sert à augmenter décider quand on augmente la vitesse //
+		
+	while ( true ) {
+			
+	    try {
+				
+		Thread.sleep ( vitesse );
+	    }
+			
+	    catch ( Exception e ) {
+				
+		System.out.println ( e );
+	    }
+
+	    if( clavier.getEspace() && dx==0 && dy==0) {
+		dx = 1;
+		dy = 1;
+	    }
+
+	    if(clavier.getATape()){
+		System.exit(5);
+	    }
+			
+	    if ( clavier.getGauche() ) {
+				
+		if ( joueur.getA().getX() > 0 ) {
+					
+		    if ( dx == 0 && dy == 0 )
+			balle.translater(-10,0);
+
+		    joueur.translater(-10,0);
+		}
+	    }
+			
+	    if ( clavier.getDroite() ) {
+				
+		if ( joueur.getB().getX() < largeur ) {
+					
+		    if ( dx == 0 && dy == 0 )
+			balle.translater(10,0);
+					
+		    joueur.translater(10,0);
+		}
+	    }
+		
+	    //tape sur la limite droite
+	    if ( balle.getO().getX() - 10 == 0 )
+		dx = 1;
+			
+	    if ( balle.getO().getY() + 10 == hauteur )
+		dy = -1;
+			
+	    //tape sur la limite gauche
+	    if ( balle.getO().getX() + 10 == largeur )
+		dx = -1;
+			
+	    if ( balle.getO().getY()  == 0 ) {		// La balle est perdue, on reset les paramètres //
+			
+		dx = 0;
+		dy = 0;
+
+		//Pour éviter que le rectangle de la raquette ne soit inversé (coin bas gauche à droite du coin haut droite)
+		joueur.setA(new Point(0,joueur.getA().getY()));
+		joueur.setB(new Point(largeur, joueur.getB().getY()));
+		joueur.setA(new Point(( largeur / 2 ) - 40, joueur.getA().getY()));
+		joueur.setB(new Point(( largeur / 2 ) + 40, joueur.getB().getY()));
+
+		balle.setO(new Point(f.getMilieu().getX(),80));
+				
+		vitesse = 1;
+	    }
+			
+	    if ( balle.intersectionRapide ( joueur ) ) {
+				
+		if ( balle.getO().getX() < joueur.getA().getX() )
+		    dx = -1;
+				
+		if ( balle.getO().getY() < joueur.getA().getY() )
+		    dy = -1;
+				
+		if ( balle.getO().getX() > joueur.getB().getX() )
+		    dx = 1;
+				
+		if ( balle.getO().getY() > joueur.getB().getY() )
+		    dy = 1;
+	    }
+			
+	    for ( int i = 0; i < 75 ; i++ ) {		// Test si il y a collision avec les blocs //
+			
+		if ( balle.intersectionRapide ( bloc[i] ) && info_bloc[i][0] == 1 ) {
+					
+		    if ( balle.getO().getX() < bloc[i].getA().getX() )
+			dx = -1;
+					
+		    if ( balle.getO().getY() < bloc[i].getA().getY() )
+			dy = -1;
+					
+		    if ( balle.getO().getX() > bloc[i].getB().getX() )
+			dx = 1;				
+					
+		    if ( balle.getO().getY() > bloc[i].getB().getY() )
+			dy = 1;
+					
+		    if ( info_bloc[i][1] == 1 ) {	// Si le bloc est détruit //
+					
+			f.supprimer ( bloc [i] );		// On le supprime de l'affichage //
+						
+			info_bloc [i][0] = 0;
+						
+			score += 100;
+		    } 
+					
+		    else {	// Sinon on fragilise le bloc //
+					
+			info_bloc[i][1]--;	// On réduit le nombre de coups restant //
+			info_bloc[i][2]++;	// On lui change sa couleur //
+						
+			bloc[i].setCouleur ( couleur [info_bloc[i][2]] );
+			score += 10;
+		    }
+					
+		    nb++;
+
+		    if ( vitesse > 2 ) {
+						
+			if ( nb == 10 ) {
+							
+			    vitesse--;
+			    nb = 0;
+			}
+		    }
+					
+		    int s = score / 10;
+		    int y = 1;
+					
+		    while ( s != 0 ) {
+						
+			int mod = s % 10;
+			s /= 10;
+						
+			score_nb[y].setImg ( "img/" + mod + ".png" );
+			y++;
+		    }
+		}
+	    }
+			
+	    balle.translater( dx*cx , dy*cy );
+					
+	    f.rafraichir();
+	}
+    }	
+}
