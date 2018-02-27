@@ -1,0 +1,272 @@
+/*************************/
+/*      COMMODORE64      */
+/*************************/
+Ghost'n Goblins
+
+/************************/
+/* ATARI 2600-5200-7800 */
+/************************/
+
+/*************************/
+/*          NES          */
+/*************************/
+The legend of zelda
+Super mario 1
+Super mario 2
+Super mario 3
+Megaman 2
+---------------------------------Castlevania
+Double dragon
+Metroid
+
+
+/*************************/
+/*     MASTER SYSTEM     */
+/*************************/
+-------------------------------------Alex kidd
+
+/*************************/
+/*    GAMEBOY - COLOR    */
+/*************************/
+tetris
+
+
+/************************/
+/*         SNES         */
+/************************/
+Zelda - a link to the past
+Unirally
+Super mario world
+Megaman X
+------------------------------Castlevania
+F-zero
+Parodius
+Bomberman
+Secret of mana
+R-type
+Aladin
+Super Metroid
+Lost viking
+Earthworm Jim
+Killer instinct
+Sim city
+Street racer
+Mario kart
+
+
+/*************************/
+/*    MEGADRIVE - 32X    */
+/*************************/
+Strider
+Sonic
+Sonic 2
+Sonic 3
+Dr Robotnik Mean bean machine
+Landstalker
+La légende de thor
+Aladin
+Le roi lion
+Spot goes to hollywood
+-----------------------------------James pond
+----------------------------------- Rampart
+Virtua racong
+
+/************************/
+/*        JAGUAR        */
+/************************/
+
+/************************/
+/*         LYNX         */
+/************************/
+
+/*************************/
+/*    NEOGEO - POCKET    */
+/*************************/
+
+/*************************/
+/*       GAME GEAR       */
+/*************************/
+
+/*************************/
+/*          N64          */
+/*************************/
+
+/*************************/
+/*    GAMEBOY ADVANCE    */
+/*************************/
+Rayman
+Advance wars
+kuru kuru kururin
+
+/*************************/
+/*          PS1          */
+/*************************/
+Gran turismo
+Gran turismo 2
+Castlevania - Symphony of the night
+Rayman
+Rayman 2
+Fighting force
+Ace combat 2
+Ace combat 3
+Bloody roar
+Bloody roar 2
+Crash Bandicoot
+Crash Bandicoot 2
+Crash Bandicoot 3
+Crash Bash
+Crash Team Racing
+Formula One
+Formula One 97
+Grand Theft Auto
+Grand Theft Auto 2
+Hydro Thunder
+JackieChan Stuntmaster
+Kula World
+Klonoa
+Tombi
+Tombi 2
+Pandemonium
+Pandemonium 2
+Legacy of Kain - Blood Omen
+Legacy of Kain - Soul reaver
+Loaded
+Re loaded
+Mass destruction
+Medievil
+Medievil 2
+Monster trucks
+Moto racer
+Moto racer 2
+Music 2000
+Parappa the rapper
+Ridge racer
+Ridge racer revolution
+Rage racer
+Ridge racer type 4
+Resident Evil
+Resident Evil 2
+Resident Evil 3
+Rollcage
+Rollcage 2
+Spyro
+Spyro 2
+Sled storm
+Soul blade
+Street fighter alpha 3
+Tekken 3
+Tenchu
+Tenchu 2
+Tomb Raider
+Tomb Raider 2
+Tomb Raider 3
+Tomb Raider 4
+Tomb Raider 5
+Tony Hawk's Pro skater
+V-rally 97
+Wipeout
+Wipeout 97
+Worms
+Worms armageddon
+Anna Kournikoav smash court tennis
+Bomberman world
+Colony Wars
+Colony Wars 2
+Colony Wars 3
+G-Police
+G-Police 2
+Destruction Derby
+Destruction Derby 2
+Die hard trilogy
+------------------------------------------Fifa
+------------------------------------------ISS
+Ghost in the shell
+Track and field
+MDK
+------------------------------------------Mortal kombat
+Oddworld, l'odyssée d'abe
+Overboard !
+bust a move - puzzle bubble
+Warcraft 2
+
+/*************************/
+/*        SATURN         */
+/*************************/
+Amok
+Dayton USA
+Sega rally
+Manx TT
+Soviet strike
+Story of thor 2
+Nights
+Panzer Dragoon
+Panzer Dragoon Zwei
+Panzer dragoon saga
+Spot goes to hollywood
+Virtua fighter
+Virtua fighter 2
+Virtua racing
+
+/************************/
+/*       GAMECUBE       */
+/************************/
+
+/*************************/
+/*       DREAMCAST       */
+/*************************/
+Chu chu rocket
+Soul Calibur
+Crazy taxi
+Crazy taxi 2
+Space channel 5
+Virtua tennis
+Sega GT
+Rez
+Metropolis Street Racer
+Ikaruga
+Dead or Alive 2
+Giga wing
+Monaco Grand Prix Racing Simulation
+The nomad Soul
+Power Stone
+Power stone 2
+Rayman 2
+Resident Evil
+Sonic adventure
+Sonic adventure 2
+Toy commander
+TrickStyle
+
+/*************************/
+/*          PS2          */
+/*************************/
+
+/*************************/
+/*          PSP          */
+/*************************/
+
+/************************/
+/*        ARCADE        */
+/************************/
+pacman
+scud race
+puyo puyo
+Strider
+Street fighter
+Bust a move - puzzle bubble
+Bomberman
+dodonpachi
+king of fighters
+Metal slug
+Mortal Kombat
+Dayton USA
+Sega rally
+Manx TT
+Ghost'n Goblins
+Boulder dash
+Lemmings
+Centipede
+Galaga
+Space invader
+Frog
+Smash TV
