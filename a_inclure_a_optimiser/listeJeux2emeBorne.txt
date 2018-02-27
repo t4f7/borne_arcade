@@ -14,10 +14,33 @@ The legend of zelda
 Super mario 1
 Super mario 2
 Super mario 3
+Megaman
 Megaman 2
----------------------------------Castlevania
-Double dragon
+Megaman 3
+Megaman 4
+Megaman 5
+Megaman 6
+New Zealand Story
+Castlevania
+Castlevania 2
+Castlevania 3
+Chip'n dale - rescue ranger
+Double dragon 2
+Dr Mario
+Duck Tales
+Duck Tales 2
+Duck Tales 3
+Paper boy
+Pinbot
+Punch out
+Ghost'n goblins
+Gradius
+Kirby's adventure
 Metroid
+Solstice
+Teenage mutant ninja turtle
+Yoshi's cookie
+Zelda 2
 
 
 /*************************/
@@ -29,6 +52,7 @@ Metroid
 /*    GAMEBOY - COLOR    */
 /*************************/
 tetris
+super mario land
 
 
 /************************/
@@ -37,27 +61,66 @@ tetris
 Zelda - a link to the past
 Unirally
 Super mario world
+Super mario world 2
 Megaman X
-------------------------------Castlevania
+Megaman X2
+Megaman X3
+NBA Jam
+R type 3
+Castlevania
 F-zero
+Super r-type
+Zoop
+Tiny toons adventure - buster busts loose
+Tiny toons adventure - wild and wacky sports
 Parodius
 Bomberman
+Secret of evermore
 Secret of mana
 R-type
 Aladin
 Super Metroid
 Lost viking
+Lost viking 2
 Earthworm Jim
+Earthworm Jim 2
 Killer instinct
 Sim city
+Sim city 2000
+Street fighter 2 turbo
+Super castlevania 4
+Super gouls'n ghosts
+Super james pond 2
+Super mario all stars
 Street racer
 Mario kart
-
+Star fox
+Star fox 2
+Aladin
+Asterix
+Breath of fire
+Breath of fire 2
+Chrono trigger
+Contra 3
+Cool spot
+Donkey Kong country
+Donkey Kong country 2
+Donkey Kong country 3
+Final Fantasy - Mystic Quest
+Final Fantasy 2
+Flashback
+goof troop
+Gradius 3
+James Pong Junior
+Le livre de la jungle - Jungle Book
+Lufia
+Lufia and the fortress of doom
 
 /*************************/
 /*    MEGADRIVE - 32X    */
 /*************************/
 Strider
+Strider 2
 Sonic
 Sonic 2
 Sonic 3
@@ -67,9 +130,32 @@ La légende de thor
 Aladin
 Le roi lion
 Spot goes to hollywood
------------------------------------James pond
------------------------------------ Rampart
-Virtua racong
+James pond 3
+Rampart
+Virtua racing
+Asterix and the power of the gods
+Bio hazard Battle
+Herzog zwei
+Ecco
+Ecco 2
+Le roi lion
+Road rash
+Road rash 2
+Road rash 3
+Shining force
+Shining force 2
+Shinobi 3
+Soleil
+After burner
+Space harrier
+Outrun
+Street of rage 2
+Street of rage 3
+Taz in escape fro mars
+Thunderforce 2
+Thunderforce 4
+Zool
+Earthworm Jim
 
 /************************/
 /*        JAGUAR        */
@@ -90,13 +176,41 @@ Virtua racong
 /*************************/
 /*          N64          */
 /*************************/
+Mario 64
+007 - goldeneye
+Banjo Kazooie
+Conker's bad fur day
+Diddy Kong racing
+Donkey Kong 64
+F-zero X
+The legend of Zelda - ocarina of time
+The legend of Zelda - Majora's Mask
+Mario Kart 64
+Star fox 64
 
 /*************************/
 /*    GAMEBOY ADVANCE    */
 /*************************/
-Rayman
+Rayman 3
+Rayman advance
 Advance wars
 kuru kuru kururin
+Breath of fire
+Breath of fire 2
+Breath of fire 3
+Castlevania - aria of sorrow
+Castlevania - circle of the moon
+Castlevania - harmony of dissonance
+Gradius advance
+Jazz jackrabbit
+Mario kart - super circuit
+Metroid fusion
+Sonic advance
+Sonic advance 2
+Spyro
+Spyro 2
+Super mario advance
+Zelda
 
 /*************************/
 /*          PS1          */
@@ -270,3 +384,7 @@ Galaga
 Space invader
 Frog
 Smash TV
+Gradius 3
+Slap shot
+Tengai
+1942
