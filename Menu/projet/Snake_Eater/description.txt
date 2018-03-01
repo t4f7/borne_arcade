@@ -1,4 +1,5 @@
-Auteurs : ???
+Auteurs : Anthony Desitter, Niolas Dubrunfaut
+	  Maxime Langa, Guillaume Langa
 Année : 2014
 Type : Snake
 Description :   Programme fourni avec
