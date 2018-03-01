@@ -1,7 +1,9 @@
-Auteur : ???
-Année : 2017
-Type : Casse Brique
-Description :   Ligne 1
-		Ligne 2
-		Ligne 3
-		Ligne 4
+Auteurs : Anthony Desitter, Niolas Dubrunfaut
+	  Maxime Langa, Guillaume Langa
+Année : 2014
+Type : Casse-Brique
+Description :   Programme fourni avec
+		la bibliothèque graphique
+		MG2D. Ce jeu permet de tester
+		le bon fonctionnement de la
+		bibliothèque.
