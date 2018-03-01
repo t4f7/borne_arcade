@@ -1,1 +1,7 @@
-Snake_Eater Game
+Auteur : ???
+Année : 2017
+Type : Snake(Serpent)
+Description :   Ligne 1
+		Ligne 2
+		Ligne 3
+		Ligne 4

@@ -32,7 +32,7 @@ public class Pong {
     private final int vitesseRaquette = 6;
     private final int vitesseBalleInitiale = 4;
 
-    //ATTRIBUTS
+    //ATTRIBUTS	
     private int vitesseBalle;
     
     private Fenetre f;
@@ -64,7 +64,7 @@ public class Pong {
     //CONSTRUCTEUR
     public Pong(){
 	
-		f = new Fenetre ( "Mon premier Pong");
+		f = new Fenetre ( "Mon premier Pong",1280,1024);
 
 
 		//device.setFullScreenWindow(f);
@@ -94,16 +94,6 @@ public class Pong {
 
 		tailleRaquette=hauteur/5;
 
-		posRaqGH=new Point(epaisseurLigne*2,hauteur/2-tailleRaquette/2);
-		posRaqGB=new Point(epaisseurLigne*3,hauteur/2+tailleRaquette/2);
-		raqG=new Rectangle(Couleur.BLANC,posRaqGH,posRaqGB, false);
-		f.ajouter(raqG);
-
-		posRaqDH=new Point(largeur-3*epaisseurLigne,hauteur/2-tailleRaquette/2);
-		posRaqDB=new Point(largeur-2*epaisseurLigne,hauteur/2+tailleRaquette/2);
-		raqD=new Rectangle(Couleur.BLANC,posRaqDH,posRaqDB, false);
-		f.ajouter(raqD);
-
 		textureScoreG = new Texture("img/0.png", new Point(largeur/4,hauteur-50));
 		textureScoreD = new Texture("img/0.png", new Point(3*largeur/4,hauteur-50));
 		textureScoreG.setA(new Point(textureScoreG.getA().getX(),hauteur-epaisseurLigne-textureScoreG.getHauteur()));
@@ -128,15 +118,16 @@ public class Pong {
 		demarrer=false;
 		balle.setO(new Point(largeur/2,(int)((Math.random()*(hauteur*0.5))+hauteur/4)));
 
-		posRaqGH = new Point(epaisseurLigne*3,hauteur/2-tailleRaquette/2);
-                posRaqGB = new Point(epaisseurLigne*2,hauteur/2+tailleRaquette/2);
-                raqG=new Rectangle(Couleur.BLANC,posRaqGH,posRaqGB, false);
+		posRaqGH = new Point(epaisseurLigne*3,hauteur/2+tailleRaquette/2);
+        posRaqGB = new Point(epaisseurLigne*2,hauteur/2-tailleRaquette/2);
+        raqG=new Rectangle(Couleur.BLANC,posRaqGB,posRaqGH, false);
+        f.ajouter(raqG);
 
 	
-	        posRaqDH = new Point(largeur-2*epaisseurLigne,hauteur/2-tailleRaquette/2);
-		posRaqDB = new Point(largeur-3*epaisseurLigne,hauteur/2+tailleRaquette/2);
-		raqD=new Rectangle(Couleur.BLANC,posRaqDH,posRaqDB, false);
-
+	    posRaqDH = new Point(largeur-2*epaisseurLigne,hauteur/2+tailleRaquette/2);
+		posRaqDB = new Point(largeur-3*epaisseurLigne,hauteur/2-tailleRaquette/2);
+		raqD=new Rectangle(Couleur.BLANC, posRaqDB, posRaqDH, false);
+		f.ajouter(raqD);
 		
 		dx=0;
 		dy=0;
@@ -174,32 +165,38 @@ public class Pong {
 		    demarrer=true;
 		    dx=1;dy=1;
 		}
+		
 
 		if(clavier.getQEnfoncee()){
 		    if(!raqG.intersectionRapide(limiteBasse)){
-			raqG.setA(new Point(raqG.getA().getX(),raqG.getA().getY()-vitesseRaquette));
-			raqG.setB(new Point(raqG.getB().getX(),raqG.getB().getY()-vitesseRaquette));
+			//raqG.setA(new Point(raqG.getA().getX(),raqG.getA().getY()-vitesseRaquette));
+			//raqG.setB(new Point(raqG.getB().getX(),raqG.getB().getY()-vitesseRaquette));
+			raqG.translater(0, -vitesseRaquette);
 		    }
 		}
 
 		if(clavier.getAEnfoncee()){
 		    if(!raqG.intersectionRapide(limiteHaute)){
-			raqG.setA(new Point(raqG.getA().getX(),raqG.getA().getY()+vitesseRaquette));
-			raqG.setB(new Point(raqG.getB().getX(),raqG.getB().getY()+vitesseRaquette));
+			//raqG.setA(new Point(raqG.getA().getX(),raqG.getA().getY()+vitesseRaquette));
+			//raqG.setB(new Point(raqG.getB().getX(),raqG.getB().getY()+vitesseRaquette));
+			raqG.translater(0, +vitesseRaquette);
 		    }
 		}
 
 		if(clavier.getBasEnfoncee()){
 			if(!raqD.intersectionRapide(limiteBasse)){
-			raqD.setA(new Point(raqD.getA().getX(),raqD.getA().getY()-vitesseRaquette));
-			raqD.setB(new Point(raqD.getB().getX(),raqD.getB().getY()-vitesseRaquette));
+			//raqD.setA(new Point(raqD.getA().getX(),raqD.getA().getY()-vitesseRaquette));
+			//raqD.setB(new Point(raqD.getB().getX(),raqD.getB().getY()-vitesseRaquette));
+		    raqD.translater(0, -vitesseRaquette);
 		    }
 		}
 
 		if(clavier.getHautEnfoncee()){
 		    if(!raqD.intersectionRapide(limiteHaute)){
-			raqD.setA(new Point(raqD.getA().getX(),raqD.getA().getY()+vitesseRaquette));
-			raqD.setB(new Point(raqD.getB().getX(),raqD.getB().getY()+vitesseRaquette));
+			//raqD.setA(new Point(raqD.getA().getX(),raqD.getA().getY()+vitesseRaquette));
+			//raqD.setB(new Point(raqD.getB().getX(),raqD.getB().getY()+vitesseRaquette));
+			System.out.println(vitesseRaquette);
+		    raqD.translater(0, +vitesseRaquette);
 		    }
 		}
 
@@ -209,10 +206,16 @@ public class Pong {
 	    
 		if(balle.intersectionRapide(limiteGauche)){
 		    scoreD++;
+		    f.supprimer(raqG);
+		    f.supprimer(raqD);
+		    tailleRaquette=hauteur/5;
 		    init();
 		}
 		if(balle.intersectionRapide(limiteDroite)){
 		    scoreG++;
+		    f.supprimer(raqG);
+		    f.supprimer(raqD);
+		    tailleRaquette=hauteur/5;
 		    init();
 		}
 		if(balle.intersectionRapide(raqG) || balle.intersectionRapide(raqD)){

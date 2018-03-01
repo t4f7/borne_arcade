@@ -40,7 +40,7 @@ public class Kowasu_Renga {
 	
     private static Rectangle joueur = new Rectangle ( Couleur.BLANC, a, b, true );
 	
-    private static Point centre = new Point ( f.getMilieu().getX(), 80 );	
+    private static Point centre = new Point ( 640, 80 );	
     private static Cercle balle = new Cercle ( Couleur.BLANC, centre, 8, true );
 	
     // Main //	

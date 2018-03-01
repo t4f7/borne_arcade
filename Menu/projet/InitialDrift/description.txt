@@ -1,1 +1,7 @@
-Initial D
+Auteur : Loan Caecke
+Année : 2017
+Type : Jeu de Voiture (Tuning)
+Description :   Ligne 1
+		Ligne 2
+		Ligne 3
+		Ligne 4

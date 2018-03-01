@@ -175,7 +175,7 @@ class Jeu{ // Définition de la classe
 	fen.ajouter(accueil);
     
 	    
-	while(clavier.getEspace() == false){
+	while(clavier.getE() == false){
 
 	    fen.rafraichir();
 
@@ -368,7 +368,7 @@ class Jeu{ // Définition de la classe
 
 	//Déplacement du décor en fonction du 5+score
 	for(int indd=0;indd<(tabDecor.size());indd++){
-	    tabDecor.get(indd).translater(0,(-5+score*(-1)));
+	    tabDecor.get(indd).translater(0,(-3+score*(-1)));
 	    //Suppression décor sorti de la fenetre
 	    if(tabDecor.get(indd).getB().getY() <=0){
 			fen.supprimer(tabDecor.get(indd));
@@ -377,7 +377,7 @@ class Jeu{ // Définition de la classe
 	   
 	}  
 	for(int ig=0;ig<(tabHerbe.size());ig++){
-	    tabHerbe.get(ig).translater(0,(-5+score*(-1)));
+	    tabHerbe.get(ig).translater(0,(-3+score*(-1)));
 	    if(tabHerbe.get(ig).getB().getY() <1){
 		tabHerbe.get(ig).translater(0,TAILLEY+200);
 	    }

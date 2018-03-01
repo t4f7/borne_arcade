@@ -1,1 +1,7 @@
-Pong Game
+Auteur : Rémi Synave
+Année : 1953
+Type : Ping Pong
+Description :   Ligne 1
+		Ligne 2
+		Ligne 3
+		Ligne 4

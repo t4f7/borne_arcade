@@ -1,3 +1,4 @@
+
 public class Main {
     
 
@@ -5,7 +6,7 @@ public class Main {
 
     public static void main ( String [] args ){
 	//à régler en fonction de l'ordinateur utilisé
-	int vitesse = 20;
+	int vitesse = 10;
 	Pong p = new Pong();
 	
 	while ( true ) { 
@@ -15,7 +16,14 @@ public class Main {
 	    catch ( Exception e ) {		
 		System.out.println ( e );
 	    }
-	    
+	    if(Pong.nbRebond == 1){
+		if(vitesse > 5){
+		    vitesse = vitesse - 1;
+		}
+	    }
+	    if(!Pong.demarrer){
+		vitesse = 10;
+	    }
 	    p.maj();
 	}
 	

@@ -47,7 +47,7 @@ public class Graphique {
 		device.setFullScreenWindow(f);
 	    f.setVisible(true);
 		clavier = f.getClavier();
-		tableau = new Bouton[5];
+		tableau = new Bouton[4];
 		Bouton.remplirBouton();
 		pointeur = new Pointeur();
 		bs = new BoiteSelection(new Rectangle(Couleur .GRIS_CLAIR, new Point(0, 0), new Point(640, TAILLEY), true), pointeur);
@@ -63,7 +63,10 @@ public class Graphique {
 		f.ajouter(fond);
 		//ajout apres fond car bug graphique sinon
 		f.ajouter(bi.getImage());
-		f.ajouter(bd.getMessage());
+		for(int i = 0 ; i < bd.getMessage().length ; i++){
+			f.ajouter(bd.getMessage()[i]);
+		}
+		//f.ajouter(bd.getMessage());
 		f.ajouter(pointeur.getTriangleGauche());
 		//f.ajouter(pointeur.getTriangleDroite());
 		for(int i = 0 ; i < tableau.length ; i++){
@@ -74,7 +77,16 @@ public class Graphique {
 			f.ajouter(tableau[i].getTexte());
 			tableau[i].getTexte().setPolice(font);
 		}
-
+		//add texture
+		for(int i = 0 ; i < bd.getBouton().length ; i++){
+			f.ajouter(bd.getBouton()[i]);
+		}
+		f.ajouter(bd.getJoystick());
+		//add texte
+		for(int i = 0 ; i < bd.gettBouton().length ; i++){
+			f.ajouter(bd.gettBouton()[i]);
+		}
+		f.ajouter(bd.gettJoystick());
 	}
 
 	public void selectionJeu(){
@@ -96,7 +108,7 @@ public class Graphique {
 			tableau[pointeur.getValue()].getTexte().setPolice(fontSelect);
 		}
 		
-		
+			
 		
 		//clignotement texte selectionne
 		
@@ -119,12 +131,13 @@ public class Graphique {
 		}
 		
 
-	//tpsTexte est initialisé a system.currentmillis au depart
-
 		tableau[pointeur.getValue()].getTexte().setPolice(font);
 
-		bd.setMessage(tableau[pointeur.getValue()].getNom());
-
+		bd.lireFichier(tableau[pointeur.getValue()].getChemin());
+		bd.lireBouton(tableau[pointeur.getValue()].getChemin());
+		System.out.println(tableau[pointeur.getValue()].getChemin());
+		//bd.setMessage(tableau[pointeur.getValue()].getNom());
+		
 		pointeur.lancerJeu(clavier);
 
 		f.rafraichir();
