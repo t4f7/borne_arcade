@@ -369,29 +369,417 @@ TrickStyle
 /************************/
 /*        ARCADE        */
 /************************/
-pacman
-scud race
-puyo puyo
-Strider
-Street fighter
-Bust a move - puzzle bubble
-Bomberman
-dodonpachi
-king of fighters
-Metal slug
-Mortal Kombat
-Dayton USA
-Sega rally
-Manx TT
-Ghost'n Goblins
-Boulder dash
-Lemmings
-Centipede
-Galaga
-Space invader
-Frog
-Smash TV
-Gradius 3
-Slap shot
-Tengai
+1941
 1942
+1940 (série des 1941 1942, etc.)
+After Burner
+Air Combat
+Alien Storm
+Alien syndrome
+Alien3 : The Gun
+Aliens
+Aliens Vs Predator
+Alpine Racer
+Altered beast
+Area 51
+Arkanoid
+Arkanoid returns
+Armoured Warriors
+Art of fighting 1
+Art of fighting 2
+Art Of Fighting 3
+Asteroids
+Astro panic
+bad dudes
+Balle courbe
+Baseball Stars 2
+Batman
+Batrider
+Batsugun
+Battle Bakraid
+Battle city
+Battle Garegga
+Beast buster
+Beck ther (??)
+Bells & Whistles
+Berzerk
+Billard
+Black Tiger
+Blazing Star
+Blood Bros
+Blue's Journey
+Bomb Jack
+Bomb Jack Twin
+Bomber Man World
+Bomberman
+Bonk's Adventure
+Bosconian
+Boulder dash
+Breakthru
+Bubble Bobble
+Bubble Bobble II
+Bubble Memories
+Bubbles
+Burger Time
+Burning Rival
+Cabal
+Cadash
+Cadillacs & Dinosaurs
+Captain America and The Avengers
+Captain Commando
+CarnEvil
+Carrier Airwing
+Castlevania
+Caveman Ninja
+Centipede
+Chase HQ
+Choplifter
+Chuckie egg
+Cobra command
+Columns
+Combat school
+Commando
+Congo Bongo
+Connect 4
+Contra
+Cosmo Gang
+Crazy Taxi
+Crime Fighters
+Cruis'n USA
+Cruis'n World
+Crypt killer
+Cyberbox
+Dance Dance Revolution
+Darius
+Darius Gaiden
+Darkstalkers
+Daytona USA
+Daytona usa
+Daytona USA 2
+Dead angle
+Dead or Alive
+Defender
+Demineur
+Die Hard Arcade
+Dig Dug
+Do Don Pachi
+Don Pachi
+Donkey Kong
+Donkey Kong II
+Donkey Kong Junior
+Doom
+Double Dragon
+Double Dragon 2
+Dragon Blaze
+Dragon Saber
+Duck Hunt
+Dungeons & Dragons: Shadow Over Mystara
+Dungeons & Dragons: Tower of Doom
+Dungeons And Dragons
+Dungeons And Dragons 2
+Dynamite Cop
+Dynamite duke
+Echecs
+Eco Fighters
+Elevator action returns
+Enduro Racer
+Escape from the planet of the robot monsters
+ESP Ra De
+ESWAT Cyber police
+Express raider
+F1 Grand Prix
+Fantasy Zone
+Fatal Fury
+Fatal Fury 3
+Ferrari F355 Challenge
+Fighting Vipers
+Final Fight
+Fing of fighters
+Flicky
+Football
+Frogger
+G-LOC Air Battle
+Gaiden
+Galaga
+Galaga '88
+Galaga space invader
+Galaxian
+Gals Panic
+Garou - Mark Of The Wolves
+Gauntlet
+Gauntlet Legends
+Gekirindan
+Ghots'n goblins
+Ghouls & Ghosts
+GI Joe
+Golden Axe
+Golden Axe 2
+Golden Axe: The Revenge of Death Adder
+Golden tee golf
+Gradius
+Gradius IV
+Growl
+Gun Force 2
+Gun Smoke
+Gunbird 2
+Gunblade N.Y.
+Guwange
+Hang On
+Hat Trick Hero
+Hellfire
+Hexxagon
+Hydro Thunder
+Hyper Athlete
+In The Hunt
+Indiana Jones and the temple of doom
+Jet set willy
+Jeu de dames
+Joust
+Jurassic Park
+Kaboom jupiter lander
+Karate
+Killer Instinct
+Killer Instinct 2
+King Of Fighters '96
+King Of Fighters '98
+King of fighters 94
+King Of The Monsters
+Klax
+Knights Of The Round
+Kung fu
+Kung fu master
+Last Blade
+Last Blade 2
+Last Resort
+League Bowling
+Lemmings
+Lethal Enforcers
+Lifeforce
+Liquid Kids
+Lucky & Wild
+Lunar command
+Lunar Lander
+Mahjongg
+Manx tt
+Marble Madness
+Mario Bros
+Marvel Land
+Marvel Super Heroes
+Marvel Super Heroes Vs Street Fighter
+Marvel Vs Capcom
+Marvel VS. Capcom: Clash of Super Heroes
+Mega man
+Megaman - The Power Battle
+Metal Slug
+Metal Slug 2
+Metal Slug 3
+Metal Slug 4
+Metal Slug 5
+Metal Slug 6
+Metal slug super vehicle
+Metal Slug X
+Metroid
+Michael Jackson's moonwalker
+Micro machines
+Midnight resistance
+Mini golf
+Missile Command
+Missile strike
+Moon Patrol
+Moonwalker
+Mortal Kombat
+Mortal Kombat II
+Mr Driller
+Ms Pacman
+Narc
+NBA Hangtime
+NBA Jam
+Nebulas Ray
+Neo Drift Out
+Ninja commando
+Nostradamus
+Off Road Racing
+Operation Wolf
+Out Zone
+Outfoxies
+Outrun
+OutRunners
+Pac Land
+Pac-Man
+Pang
+Paperboy
+Parodius
+Parodius Gokujyou
+Parodius Sexy
+Point Blank
+Poker
+Pong
+Popeye
+Prehistoric Isle 2
+Premier Soccer
+Prince of persia
+Progear
+Pulstar
+Punch-Out!!
+Puyo Puyo
+Puzzle Bobble
+Q*Bert
+Quake
+R-Type
+R-Type II
+R-Type Leo
+Rad Mobile
+Radiant Silvergun
+Rage Of The Dragons
+Raiden
+Raiden Fighters
+Rainbow Islands
+Rambo 3
+Rampage
+Rastan
+Rave Racer
+Raycrisis
+Raystorm
+Red plane
+Renegade
+Return Of The Jedi
+Rick dangerous
+Ridge Racer
+Robocop
+Robocop 2
+Robotron
+Rod-Land
+Rolling thunder 1
+Rolling thunder 2
+Rush'n attack
+Rygar
+Salamander
+Samurai Aces
+Samurai Shodown
+Samurai Showdown II
+Samurai Showdown IV
+Samurai Showdown V
+San Francisco Rush
+San Franscisco Rush 2049
+SCI
+SCUD Race
+Sega Bass Fishing
+Sega Rally 2
+Sega Rally Championship
+Shadow dancer
+Shinobi
+Shock Troopers
+Shock Troopers 2
+Silent Scope
+Simon
+Simpsons
+Slap shot
+Smash T.V.
+Snake
+SNK Vs Capcom
+Snow Bros
+Solitaire
+Sonic The Hedgehog
+Sorcer Striker
+Soul Calibur
+Soul Edge
+Space Harrier
+Space Invaders
+Special Criminal Investigation
+Spider-Man: The Videogame
+Spiderman
+Spin Master
+Splatterhouse
+Star wars trilogy arcade
+Starblade
+Starcastle
+Street Fighter Alpha 2
+Street Fighter Alpha 3
+Street Fighter Alpha: Warriors' Dreams
+Street Fighter II
+Street Fighter II CE
+Street Fighter II: The World Warrior
+Street Fighter III 3rd Strike: Fight For The Future
+Street Fighter III: New Generation
+Strider
+Strikers 1945
+Strikers 1945 II
+Strikers 1945 III
+Strikers 1945 Plus
+STUN Runner
+Sudoku
+Sunset Riders
+Super Gem Fighter
+Super hang on
+Super Mario World
+Super Pang
+Super Puzzle Fighter II Turbo
+Superman
+Tapper
+Teenage mutant ninja turtles
+Teenage mutant ninja turtles : turtles in time
+Teenage Mutant Ninja Turtles 2
+Tekken
+Tekken 2
+Tekken 3
+Tengai
+Tetris
+The House of The Dead
+The House of The Dead 2
+The King of Fighters '94
+The King of Fighters '98
+The lost viking
+The Newzealand Story
+The punisher
+The real ghost buster
+The simpson arcade game
+The simpsons
+Three Wonders
+Thunder Blade
+Tic tac toe
+Time Crisis
+Time Crisis 2
+Time pilot r tpe
+Toki
+Toobin
+Top Hunter
+Track & Field
+Tron
+Tumble Pop
+Turbo Out Run
+Twinklestar Sprites
+UN Squadron
+Undercover cops
+Varth
+Vasara 2
+Viewpoint
+Vigilante
+Violent Storm
+Virtua Cop
+Virtua Fighter
+Virtua Fighter 2
+Virtua Fighter 3
+Virtua Racing
+Virtua Striker
+Virtua Striker 2
+Virtua Tennis
+Waku Waku 7
+Warzard - Red Earth
+Wave Runner
+Wind Jammers
+Wonder Boy
+Wonder Boy III
+Wonder Boy In Monster Land
+World Rally
+WWF Wrestle Fest
+WWF Wrestlemania
+X-Men
+X-men children of the atom
+X-men vs street fighter
+Xenon mega blast
+Xevious
+Xybots
+Yie ar Kung Fu
+Zupapa!
+
+
