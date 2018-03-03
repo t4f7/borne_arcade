@@ -1,7 +1,8 @@
 Auteur : Rémi Synave
-Année : 1953
+Année : 2014
 Type : Ping Pong
-Description :   Ligne 1
-		Ligne 2
-		Ligne 3
-		Ligne 4
+Description :   Programme fourni avec
+		la bibliothèque graphique
+		MG2D. Ce jeu permet de tester
+		le bon fonctionnement de la
+		bibliothèque.

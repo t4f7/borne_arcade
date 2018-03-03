@@ -1,7 +1,7 @@
 Auteur : Loan Caecke
 Année : 2017
-Type : Jeu de Voiture (Tuning)
-Description :   Ligne 1
-		Ligne 2
-		Ligne 3
-		Ligne 4
+Type : Jeu de Voiture
+Description :   Jeu développé dans le cadre
+		du module M2103 - Programmation
+		Orientée Objet en 1ère année
+		de DUT Informatique.
