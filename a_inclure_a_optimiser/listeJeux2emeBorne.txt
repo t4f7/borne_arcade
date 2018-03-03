@@ -115,6 +115,13 @@ James Pong Junior
 Le livre de la jungle - Jungle Book
 Lufia
 Lufia and the fortress of doom
+Earthbound
+Super Mario RPG
+Super punch out
+Yoshi's island
+Kirby's super start
+Kirby's Dream course
+
 
 /*************************/
 /*    MEGADRIVE - 32X    */
